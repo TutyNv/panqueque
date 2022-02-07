@@ -1038,6 +1038,40 @@ if (test.includes(`grupo`)){
         },   
         ]
         },        
+        {
+        "title": `🔖 Créditos / Creador 🔮 `,
+        "rows": [
+        {
+        "title": ' 🔮 Creador',
+        "rowId": `creador`
+        },
+        {
+        "title": 'Donacion / Agradecimiento',
+        "rowId": `agradecimiento`
+        },
+        ]    
+        },
+        {
+        "title": `Link Grupos de WhatsApp Recomendados`,
+        "rows": [
+        {
+        "title": 'Grupos de Amistad & Mas',
+        "rowId": `linkgpw`
+        }
+        ]    
+        },
+        {
+        "title": `Youtube`,
+        "rows": [
+        {
+        "title": 'Como Instalar Este Bot',
+        "rowId": `install`
+        },
+        ]    
+        }
+        ],
+        }
+        },
           {quoted: janza, contextInfo: { mentionedJid: [sender,Oowner]}})
         leo.relayWAMessage(lista)  
         addFilter(from)
