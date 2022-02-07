@@ -92,7 +92,7 @@ const { linkgp } = require ('./lib/exportaciones/linkgp')
 //Connet
 conn.connect()
 const leo = conn.leo
-/* 𝕱𝖚𝖓𝖈𝖎𝖔𝖓𝖊𝖘 | 𝕭𝖆𝖇𝖞𝕭𝖊𝖈𝖍𝖔𝖘𝖔 | 𝕿𝖍𝖊𝕮𝖍𝖔𝖚𝖙𝖊*/
+/* 𝕱𝖚𝖓𝖈𝖎𝖔𝖓𝖊𝖘 | 𝓹𝓪𝓷𝓺𝓾𝓮𝓺𝓾𝓮 | 𝕿𝖚𝖙𝖞 */
 //𝕽𝖊𝖌𝖎𝖘𝖙𝖗𝖔
 const getRegisteredRandomId = () => {
   return _registered[Math.floor(Math.random() * _registered.length)].id
