@@ -150,7 +150,7 @@ Esperemos la pases bien y te guste el grupo.`
 
     let fotoP = await getBuffer(ppimg)
     leo.sendMessage(mdata.id, fotoP, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
-    leo.sendMessage(mdata.id, fotoP, MessageType.image,  {thumbnail:fs.readFileSync('./media/imagen/uwu.jpg'), caption: teks, contextInfo: { mentionedJid: [num], "forwardingScore": 508, "isForwarded": true, "externalAdReply": 
+ //   leo.sendMessage(mdata.id, fotoP, MessageType.image,  {thumbnail:fs.readFileSync('./media/imagen/uwu.jpg'), caption: teks, contextInfo: { mentionedJid: [num], "forwardingScore": 508, "isForwarded": true, "externalAdReply": 
   /*  {"title": 'Como Instalar Este Bot',       
     "body": 'Facil y Rapido',  
     "thumbnail": fs.readFileSync('./media/imagen/youtube-mi.jpg'),
