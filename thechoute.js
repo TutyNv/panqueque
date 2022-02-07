@@ -951,19 +951,7 @@ if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`grupo`)){
   leo.sendMessage(from, `
-  *-Te invito a unirte al grupo de WhatsApp donde:-*
-  
-  💭:Se avisa sobre nuevas actualizaciones 
-  
-  💭:Puedes probar tu propio bot
-  
-  💭:Se ayuda a quienes tengas problemas
-  
-  Grupo 1 : 
-  _https://chat.whatsapp.com/KOmt1i9738c2zA1SnSLwn1_
-  
-  Grupo 2 : 
-  _https://chat.whatsapp.com/GQnptaCf21IEvLJ69RPT4a_`, MessageType.text, {quoted: choute})
+ Pues...denada :v`, MessageType.text, {quoted: choute})
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
 
@@ -1000,8 +988,8 @@ if (test.includes(`grupo`)){
         "rowId": `entrenimiento`
         },
         {
-        "title": 'Logos(en este momento no funciona)',
-        "rowId": `Logos`
+        "title": 'Logos(en este momento no funcionan los textos)',
+        "rowId": `logos`
         },   
         ]
 	}
@@ -1093,6 +1081,7 @@ if (choute.message.listResponseMessage){
   reply('Cargando Menu Completo, No Hagas Spam')            
   txtt =
   `${texto}\n${allmenu}`
+    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Gracias'},type:1},]
     imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/bot-baby.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
     buttonsMessage = {
     contentText: `${txtt}`,
@@ -1143,7 +1132,7 @@ addLevelingLevel(sender, 5)	}}
     leo.updatePresence(from, Presence.composing)
     if (!isRegister) return reply(baby.only.usrReg)
     uptime = process.uptime()
-    leo.sendMessage(from, fs.readFileSync(`media/imagen/baby.png`), image, {quoted: choute, caption:`🔥 𝑳𝑰𝑺𝑻𝑨 𝑫𝑬 𝑳𝑶𝑮𝑶𝑺 🔥 \n${texto}\n${logos}`})  
+    leo.sendMessage(from, fs.readFileSync(`media/imagen/baby.png`), image, {quoted: choute, caption:` 𝑳𝑰𝑺𝑻𝑨 𝑫𝑬 𝑳𝑶𝑮𝑶𝑺(no funcionan) \n${texto}\n${logos}`})  
     addFilter(from)
     addLevelingLevel(sender, 5)	}}
 
@@ -2886,10 +2875,10 @@ case 'ban':
                 imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/ban.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
                 buttonsMessage = {
                 contentText: `${isbans}`,
-                footerText: '© Creator 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊', imageMessage: imageMsg,
+                footerText: '© panquesito', imageMessage: imageMsg,
                 buttons: buttons1,
                 headerType: 4}} 
-                else if (isQuotedMsg) {if (quotedMsg.sender.match('18299897014')) return reply(`🤨`)
+                else if (isQuotedMsg) {if (quotedMsg.sender.match('18299897014')) return reply(`:|`)
                 addBanned(quotedMsg.sender, args[1], ban)
                 mentions(`@${mentionUser[0].split('@')[0]} Estas baneado no podes usar el bot :D2`, mentionUser, true)} 
                 else if (!isNaN(args[1])) {addBanned(args[1] + '@s.whatsapp.net', args[2], ban)
