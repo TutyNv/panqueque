@@ -951,7 +951,7 @@ if (choute.message.buttonsResponseMessage){
 test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`grupo`)){
   leo.sendMessage(from, `
- Pues...denada :v`, MessageType.text, {quoted: choute})
+ xd`, MessageType.text, {quoted: choute})
   addFilter(from)
     addLevelingLevel(sender, 5)	}}
 
@@ -1081,7 +1081,7 @@ if (choute.message.listResponseMessage){
   reply('Cargando Menu Completo, No Hagas Spam')            
   txtt =
   `${texto}\n${allmenu}`
-    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Gracias'},type:1},]
+    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Lmao'},type:1},]
     imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/bot-baby.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
     buttonsMessage = {
     contentText: `${txtt}`,
@@ -1371,7 +1371,7 @@ case 'menu':
                 sendButLocation(from, `${txtt}`, `panqueque`, fs.readFileSync("./media/imagen/absu.jpg"),
                 buttons =[ {buttonId:`ml`,buttonText:{displayText: 'Lista de Menus'},type:1},
 	        {buttonId:`sex`,buttonText:{displayText:'Como tener un bot'},type:1},
-                {buttonId:`grupo`,buttonText:{displayText:'Grupos prueba bot'},type:1}],
+                {buttonId:`grupo`,buttonText:{displayText:'Panqueques'},type:1}],
                 {contextInfo: { mentionedJid: [sender,Oowner]}})
                 men = leo.prepareMessageFromContent(from, { buttonsMessages })
                 leo.relayWAMessage(men)
