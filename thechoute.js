@@ -1004,6 +1004,7 @@ if (test.includes(`grupo`)){
         "rowId": `Logos`
         },   
         ]
+	}
         },        
 
           {quoted: janza, contextInfo: { mentionedJid: [sender,Oowner]}})
