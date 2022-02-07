@@ -602,7 +602,7 @@ const texto11 = `
 ╰━─━─☾︎🌊☽︎─━─━╯`
 const cmenu = `
 ╔╦══• •✠•❀•✠ • •══╦╗
-   🐞 𝕿𝖚𝖙𝖞  🐞
+       🐞 𝕿𝖚𝖙𝖞  🐞
 ╚╩══• •✠•❀•✠ • •══╩╝
 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 Buenas tardes🌇 _@${sender.split('@')[0]}_
@@ -852,7 +852,7 @@ const allmenu =
 `
 ╔─━━━░★░━━━━╗
             *MENU OFICIAL*
-	    𝕿𝖚𝖙𝖞        
+	        𝕿𝖚𝖙𝖞        
 ╚─━━━░★░━━━─╝
 
 ¤ = ~ ~ ◉ ~~ = ¤.•♫•♬•♬•♫•.
@@ -2125,7 +2125,7 @@ case 'voz':
                 ranm = getRandom('.mp3')
                 rano = getRandom('.ogg')
                 dtt.length > 300
-                ? reply('Mira, si no sabes usar esto... mejor no lo agas 😤')
+                ? reply('Mira, si no sabes usar esto... mejor no lo hagas')
                 : gtts.save(ranm, dtt, function() {
                 leo.updatePresence(from, Presence.recording)
                 leo.sendMessage(from, fs.readFileSync(ranm), audio, {quoted: choute, mimetype: 'audio/mp4', duration: -999999999999999999, ptt:true, sendEphemeral: true, contextInfo: {"forwardingScore": 999, "isForwarded": true}})
