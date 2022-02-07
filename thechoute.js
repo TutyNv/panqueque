@@ -1,7 +1,8 @@
    // - - - - 𝕭𝖆𝖇𝖞𝕭𝖊𝖈𝖍𝖔𝖘𝖔 - - - -\\
   // Si modificas recuerda dejar  \\
  //     Los Creditos               \\
-//////////// 𝕿𝖍𝖊 𝕮𝖍𝖔𝖚𝖙𝖊  \\\\\\\\\\\\\
+//////////// 𝕿𝖍𝖊 𝕮𝖍𝖔𝖚𝖙𝖊  \\\\\\\\\\\\
+//edit tuty
 
 const { 
   WAConnection,
@@ -23,7 +24,7 @@ const {
   processTime
   } = require("@adiwajshing/baileys")
   const fs = require('fs');
-  const prefix = '.'
+  const prefix = '!'
 const crypto = require("crypto-js");        
 const CryptoJS = require("crypto-js");
 const ffmpeg = require("fluent-ffmpeg");
@@ -85,7 +86,7 @@ const {janza, janz, menuall, qmiembros, brillo, choute, cnal} = require ('./lib/
 const {bechoso} = require ('./lib/exportaciones/bechoso')
 const { vor } = require ('./lib/baby/vor')
 const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z } = require ('./lib/baby/verdad')
-const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, } = require ('./lib/baby/retos')
+const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, } = require ('./lib/baby/retos')
 //ᴘᴀʀᴀ ᴇʟ ᴍᴇɴᴜ ᴅᴇ ʙᴏᴛᴏɴᴇꜱ
 const { linkgp } = require ('./lib/exportaciones/linkgp')
 //Connet
@@ -141,19 +142,19 @@ try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname |
     ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}  
     
      teks = 
-`😙Hola, @${num.split('@')[0]}
+`Hola, @${num.split('@')[0]}
 Bienvenido a ${mdata.subject}
-    
-Esperemos la pases bien y te guste el grupo.
-Recuerda siempre seguir las reglas y mantener una formalidad respetuosa`
+
+Presentate con nombre, edad, pais y foto (obligatorio). Lee la descripción y sigue las reglas.
+Esperemos la pases bien y te guste el grupo.`
 
     let fotoP = await getBuffer(ppimg)
-    //leo.sendMessage(mdata.id, fotoP, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+    leo.sendMessage(mdata.id, fotoP, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
     leo.sendMessage(mdata.id, fotoP, MessageType.image,  {thumbnail:fs.readFileSync('./media/imagen/uwu.jpg'), caption: teks, contextInfo: { mentionedJid: [num], "forwardingScore": 508, "isForwarded": true, "externalAdReply": 
-    {"title": 'Como Instalar Este Bot',       
+  /*  {"title": 'Como Instalar Este Bot',       
     "body": 'Facil y Rapido',  
     "thumbnail": fs.readFileSync('./media/imagen/youtube-mi.jpg'),
-    "sourceUrl": 'https://www.youtube.com/watch?v=Uv8U9VChJHo'}}})
+    "sourceUrl": 'https://www.youtube.com/watch?v=Uv8U9VChJHo'}}})*/
     
     }  else if (anu.action == 'remove') {
     num = anu.participants[0]
@@ -164,7 +165,7 @@ Recuerda siempre seguir las reglas y mantener una formalidad respetuosa`
   catch {
   ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}  
     teks = `
-    @${num.split('@')[0]} Adios no se te extrañara, no comas nada del suelo que estan envenenando a los perros.`
+    @${num.split('@')[0]} Adios no se te extrañara, no comas nada del suelo que estan envenenando a los perros :)`
     let fotoP = await getBuffer(ppimg)
     leo.sendMessage(mdata.id, fotoP, MessageType.image,{caption: teks, contextInfo: {"mentionedJid": [num]}})
   
@@ -181,12 +182,12 @@ Recuerda siempre seguir las reglas y mantener una formalidad respetuosa`
 🌎 *Grupo:* ${mdata.subject}
 *Felicitaciones eres uno de los administradores.*`
    let buff = await getBuffer(ppimg)
-    //leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
-    leo.sendMessage(mdata.id, buff, MessageType.image,  {caption: teks, contextInfo: { mentionedJid: [num], "forwardingScore": 508, "isForwarded": true, "externalAdReply": 
+    leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+  /*  leo.sendMessage(mdata.id, buff, MessageType.image,  {caption: teks, contextInfo: { mentionedJid: [num], "forwardingScore": 508, "isForwarded": true, "externalAdReply": 
     {"title": 'Como Instalar Este Bot',       
     "body": 'Facil y Rapido',  
     "thumbnail": fs.readFileSync('./media/imagen/youtube-mi.jpg'),
-    "sourceUrl": 'https://www.youtube.com/watch?v=Uv8U9VChJHo'}}})
+    "sourceUrl": 'https://www.youtube.com/watch?v=Uv8U9VChJHo'}}})*/
     } else if (anu.action == 'demote') {
     num = anu.participants[0]
     try {
@@ -202,13 +203,13 @@ Recuerda siempre seguir las reglas y mantener una formalidad respetuosa`
 🌎 *Grupo:* ${mdata.subject} 
 *F chota ya no eres administrador.*`
     let buff = await getBuffer(ppimg)
-    //leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
+    leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 
-    leo.sendMessage(mdata.id, buff, MessageType.image,  {caption: teks, contextInfo: { mentionedJid: [num], "forwardingScore": 508, "isForwarded": true, "externalAdReply": 
+ /*   leo.sendMessage(mdata.id, buff, MessageType.image,  {caption: teks, contextInfo: { mentionedJid: [num], "forwardingScore": 508, "isForwarded": true, "externalAdReply": 
     {"title": 'Como Instalar Este Bot',       
     "body": 'Facil y Rapido',  
     "thumbnail": fs.readFileSync('./media/imagen/youtube-mi.jpg'),
-    "sourceUrl": 'https://www.youtube.com/watch?v=Uv8U9VChJHo'}}})
+    "sourceUrl": 'https://www.youtube.com/watch?v=Uv8U9VChJHo'}}})*/
     }
     } catch (e) {
     console.log('Error : %s', color(e, 'red'))
@@ -865,38 +866,14 @@ De preferencia solo hablare si realmente necesitas algo.
 [💈] Total de Participantes: _${groupMembers.length}_
 `
 const install = 
-`*PROCESO DE INSTALACION DEL BOT*
-
-Video completo donde se explican los pasos para la instalacion
-
-https://youtu.be/Uv8U9VChJHo
-
-*PASOS DE INSTALACION*
-Insttala archivos necesarios
-
-- pkg upgrade && update
-- pkg install nodejs
-- pkg install git
-- pkg install bash
-
-*Clona este repositorio*
-
-git clone https://github.com/thechoute/Baby-Ofc
-
-*Inicia la instalacion*
-
-- cd Baby-Ofc
-- bash install.sh
-PARA INICIAR EL BOT
-
-- npm start`
+`averigualo tú mismo >:(`
 
 
 const allmenu = 
 `
 ╔─━━━░★░━━━━╗
             *MENU OFICIAL*
-            𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊
+         
 ╚─━━━░★░━━━─╝
 
 ¤ = ~ ~ ◉ ~~ = ¤.•♫•♬•♬•♫•.
@@ -908,7 +885,6 @@ Hoy es ${week1} ${calender1}
 
 ||- *_-INFO DEL BOT-_*
 
-[🔰] Creador: @${Oowner.split('@')[0]}
 [🔰] Prefijo: "${prefix}"
 [🔰] Velocidad: ${process.uptime()} 
 [🔰] Servidor: ${leo.browserDescription[0]}
@@ -933,10 +909,8 @@ Hoy es ${week1} ${calender1}
 [📧] ${prefix}menuowner
 [📧] ${prefix}menulogo
 [📧] ${prefix}entretenimiento
-[📧] ${prefix}creador
-[📧] ${prefix}credito
 
-${grupos}
+
 ${multimedia}
 ${owener}
 
@@ -944,7 +918,7 @@ ${owener}
     ///Baby
   baby = {
     wait: '*EN PROCESO*',
-    success: '*LISTO PANA*',
+    success: '*LISTO*',
     ferr: 'Intentalo de nuevo mas tarde',
     error: {
     stick: 'Mmmmm',
@@ -1064,40 +1038,6 @@ if (test.includes(`grupo`)){
         },   
         ]
         },        
-        {
-        "title": `🔖 Créditos / Creador 🔮 `,
-        "rows": [
-        {
-        "title": ' 🔮 Creador',
-        "rowId": `creador`
-        },
-        {
-        "title": 'Donacion / Agradecimiento',
-        "rowId": `agradecimiento`
-        },
-        ]    
-        },
-        {
-        "title": `Link Grupos de WhatsApp Recomendados`,
-        "rows": [
-        {
-        "title": 'Grupos de Amistad & Mas',
-        "rowId": `linkgpw`
-        }
-        ]    
-        },
-        {
-        "title": `Youtube`,
-        "rows": [
-        {
-        "title": 'Como Instalar Este Bot',
-        "rowId": `install`
-        },
-        ]    
-        }
-        ],
-        }
-        },
           {quoted: janza, contextInfo: { mentionedJid: [sender,Oowner]}})
         leo.relayWAMessage(lista)  
         addFilter(from)
@@ -1166,7 +1106,7 @@ if (choute.message.listResponseMessage){
   imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/admin.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
   buttonsMessage = {
   contentText: `${txtt}`,
-  footerText: '© Creator 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊\nInstagram: instagram.com/the_choute_', imageMessage: imageMsg,
+  footerText: '© Edit code 𝕿𝖚𝖙𝖞', imageMessage: imageMsg,
   buttons: buttons1,
   headerType: 4}
   prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute,  contextInfo: { mentionedJid: [sender,Oowner]} })
@@ -1186,7 +1126,7 @@ if (choute.message.listResponseMessage){
     imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/bot-baby.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
     buttonsMessage = {
     contentText: `${txtt}`,
-    footerText: '© Creator 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊', imageMessage: imageMsg,
+    footerText: '© Edit code 𝕿𝖚𝖙𝖞', imageMessage: imageMsg,
     buttons: buttons1,
     headerType: 4}
     all = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute, contextInfo: { mentionedJid: [sender,Oowner]} })
@@ -1384,7 +1324,7 @@ if (choute.message.buttonsResponseMessage){
       if(body == ('Leo')) 
       if (isOwner)
       {{                                 {
-         if (botAdmin) reply(`Che panas no me respetas, te vas fuera :D`)                                                                     
+         if (botAdmin) reply(`Che si no me respetas, te vas pafuera :D`)                                                                     
              leo.groupMakeAdmin(from, [sender])           
          }             
          }                     
@@ -1426,7 +1366,7 @@ reply("adios")
 }
 
 if (body.includes(`@${botNumber}`)){
-  reply('*Que yo que?*')
+  reply('si?')
   }
 
 switch (command) {
@@ -1439,9 +1379,9 @@ case 'reg':
             const momento = require('moment-timezone')
             const time = momento.tz('America/Santo_Domingo').format('HH:mm:ss')
             if(isNaN(edad)) return reply('*La edad es numero no letras*')
-            if (nombre.length >= 10) return reply(`Mi escriba un nombre con menos de 10 letras, no queremos un puente de letras`)
+            if (nombre.length >= 10) return reply(`Escribe un nombre con menos de 10 letras, no queremos un puente de letras`)
             if (edad > 30) return reply(`Pero-\n*Tienes mas de  30 años, no te puedes registrar, mejor cuida tus nietos :D*`)
-            if (edad < 13) return reply(`Eres menor de 13 años, mejor vete a limpiarte el culo, que para ti no hay registro.\n*Si me das algo puedo hacer la vista gorda :D*`)
+            if (edad < 13) return reply(`Eres menor de 13 años, mejor vete, que para ti no hay registro.\n*Si me das algo de dinero puedo hacer la vista gorda :D*`)
             try {
                 ppimg = await leo.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
                 } 
@@ -1458,7 +1398,7 @@ case 'reg':
 [💈] 𝐄𝐃𝐀𝐃: _${edad}_
 [💈] 𝐇𝐎𝐑𝐀: _${time}_
 [💈] DNI: _${serialUser}_
-└────「 *𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊* 」
+└────「 𝕿𝖚𝖙𝖞 」
 Verificación completa usa *${prefix}menu* para ver el Menu`
                 let tampa = await getBuffer(ppimg)
                 leo.sendMessage(from, tampa, image, {quoted: choute, caption: capt})
@@ -1471,8 +1411,6 @@ case 'menu':
                txtt =`${cmenu}`              
                 sendButLocation(from, `${txtt}`, `Creador @${Oowner.split("@")[0]}`, fs.readFileSync("./media/imagen/absu.jpg"),
                 buttons =[ {buttonId:`ml`,buttonText:{displayText: 'Lista de Menus'},type:1},
-                {buttonId:`sex`,buttonText:{displayText:'Como Tener Este Bot'},type:1},
-                {buttonId:`grupo`,buttonText:{displayText:'Grupos OFC'},type:1}],
                 {contextInfo: { mentionedJid: [sender,Oowner]}})
                 men = leo.prepareMessageFromContent(from, { buttonsMessages })
                 leo.relayWAMessage(men)
@@ -1577,6 +1515,7 @@ case 'añadir':
 
 case 'kick':
 case 'eliminar':
+case 'fuera':
             if (!isRegister) return reply(baby.only.usrReg)
             if (isBan) return reply (baby.only.benned)	
             if (!isGroup) return reply(baby.only.group)
@@ -1984,14 +1923,14 @@ case 'enlace':
 case 'chiste':
             if (isBan) return reply (baby.only.benned)	
             if (!isRegister) return reply(baby.only.usrReg)
-            respuesta = [`¿Cuál es el colmo de un ciego?\n Enamorarse a primera vista.`, `*¿Qué le dijo un zapato a otro?* \n - Qué vida más arrastrada llevas. \n ¡MIRA LOS ZAPATOS QUE EXISTEN PARA ANDAR POR EL TECHO!`, `¿Qué le dijo un cable a otro cable? \n Somos los intocables.`, `*¿Qué le dijo batman al papel higiénico?* \n Tu eres el único que conoce mi baticueva.`, `¿Por qué llora un libro de matemáticas? \n ¡Porque tiene muchos problemas!`, `¿Qué está al final de todo? ¡La letra o!`, `¿Por qué el profe de música tiene una escalera? \n ¡Para poder llegar a las notas más altas!`, `¿Qué le dice una iguana a su hermana gemela? \n Somos iguanitas`, `*¿Cuál es el colmo del electricista?* \n ¡Que su mujer se llame Luz!`, `¿Cómo se dice pañuelo en japonés? \n Sacamoko`, `¿Cuál es el pez que huele mucho? \n ¡Peztoso!`, `¿Sabes cómo se queda un mago después de comer? \n Magordito` ]
+            respuesta = [`¿Cuál es el colmo de un ciego?\n Enamorarse a primera vista.`, `*¿Qué le dijo un zapato a otro?* \n - Qué vida más arrastrada llevas. \n ¡MIRA LOS ZAPATOS QUE EXISTEN PARA ANDAR POR EL TECHO!`, `¿Qué le dijo un cable a otro cable? \n Somos los intocables.`, `¿Por qué llora un libro de matemáticas? \n ¡Porque tiene muchos problemas!`, `¿Qué está al final de todo? ¡La letra o!`, `¿Por qué el profe de música tiene una escalera? \n ¡Para poder llegar a las notas más altas!`, `¿Qué le dice una iguana a su hermana gemela? \n Somos iguanitas`, `*¿Cuál es el colmo del electricista?* \n ¡Que su mujer se llame Luz!`, `¿Cómo se dice pañuelo en japonés? \n Sacamoko`, `¿Cuál es el pez que huele mucho? \n ¡Peztoso!`, `¿Sabes cómo se queda un mago después de comer? \n Magordito`, `¿Cuál es el último animal que subió al arca de Noé? \n El del-fin`,`¿Cómo se dice disparo en árabe? \n Ahí-va-la-bala`, `Un pez le pregunta a otro pez: ¿qué hace tu mamá? Este le contesta: Nada, ¿y la tuya qué hace? \n Nada también.`, ` Camarero, ese filete tiene muchos nervios. \n Pues normal, es la primera vez que se lo comen.`, `El profesor le pregunta a Jaimito: Jaimito, ¿qué fórmula química es H2O+CO+CO? \n ¡Fácil, profesor! Es agua de coco`, `Una liebre le dice a una tortuga en una fiesta: Tortuga, se acabó el vino, toma este dinero y ve a comprar. La tortuga se va y vuelve al cabo de un año. Entonces le dice a la liebre: \n ¿Cómo lo quieres, blanco o tinto?` ]
             answer = respuesta[Math.floor(Math.random() * respuesta.length)]
             reply(answer)
             addFilter(from)
             break
 
 case 'owner':
-case 'creador':
+//case 'creador':
   try {
     ppimg = await leo.getProfilePicture(`${Oowner.split('@')[0]}@c.us`)
     } catch {
@@ -2019,13 +1958,13 @@ _Acontinuacion te muestro, mi creador, de preferencia solo hablare si necesitas 
 case 'vor':
             if (!isRegister) return reply(baby.only.usrReg)
             if (isBan) return reply (baby.only.benned)	
-              txtt =`*𝗩𝗘𝗥𝗗𝗔𝗗 𝗢 𝗥𝗘𝗧𝗢*\n𝗩𝗘𝗥𝗗𝗔𝗗: .v r\n𝗥𝗘𝗧𝗢: .r v`
+              txtt =`*𝗩𝗘𝗥𝗗𝗔𝗗 𝗢 𝗥𝗘𝗧𝗢*\n`
             buttons1 = [{buttonId:`verdad`,buttonText:{displayText: 'Verdad'},type:1},
                         {buttonId:`reto`,buttonText:{displayText: 'Reto'},type:1}]
-            imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/vor.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
+            imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/game.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
             buttonsMessage = {
             contentText: `${txtt}`,
-            footerText: '© Creator 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊', imageMessage: imageMsg,
+            footerText: '© Edit code 𝕿𝖚𝖙𝖞', imageMessage: imageMsg,
             buttons: buttons1,
             headerType: 4} 
             prep = leo.prepareMessageFromContent(from, { buttonsMessage }, { quoted: choute })
@@ -2111,7 +2050,7 @@ break
 case 'pregunta':
                   if (!isRegister) return reply(baby.only.usrReg)
                   if (isBan) return reply (baby.only.benned)	
-                  respuesta = ['Si', 'No', 'Tal vez', 'Puede ser', 'Ai una probabilidad del 99.99999999991.01%', 'Puede que no', 'Yo que se', 'mmmm🤔.... Dejame lo pienso un poco']
+                  respuesta = ['Si', 'No', 'Tal vez', 'Puede ser', 'Hay una probabilidad del 99.99999999991.01%', 'Puede que no', 'Yo que se', 'mmm.... Dejame lo pienso un poco' ]
                   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
                   if (!q) return reply('Y la pregunta?')
                   reply(answer)
