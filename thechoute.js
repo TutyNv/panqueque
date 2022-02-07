@@ -1000,7 +1000,7 @@ if (test.includes(`grupo`)){
         "rowId": `entrenimiento`
         },
         {
-        "title": 'Logos',
+        "title": 'Logos(en este momento no funciona)',
         "rowId": `Logos`
         },   
         ]
