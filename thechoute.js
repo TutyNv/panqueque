@@ -201,7 +201,7 @@ Esperemos la pases bien y te guste el grupo.`
 👤 *Nombre:* @${num.split('@')[0]}
 📋 *INFO:* ${thu.status}
 🌎 *Grupo:* ${mdata.subject} 
-*F chota ya no eres administrador.*`
+*F ya no eres administrador.*`
     let buff = await getBuffer(ppimg)
     leo.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 
@@ -542,7 +542,7 @@ if (hour_now >= '01' && hour_now <= '05') {
 } else if (hour_now >= '18' && hour_now <= '23') {
   timeFt = 'Buenas noches🌃'
 } 
-const yo = `𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊`
+const yo = `𝕿𝖚𝖙𝖞`
 
 const chr = {
   key: {
@@ -556,7 +556,7 @@ const chr = {
   "mimetype": "image/jpeg",
   "jpegThumbnail": fs.readFileSync(`./media/imagen/GFX.jpg`)
   },
-  "title": `${yo} | 𝑩𝒂𝒃𝒚𝑩𝒆𝒄𝒉𝒐𝒔𝒐`,
+  "title": `${yo} | 𝓹𝓪𝓷𝓺𝓾𝓮𝓺𝓾𝓮`,
   "description": "",
   "currencyCode": "L&J",
   "priceAmount1000": "9999999999999999",
@@ -602,7 +602,7 @@ const texto11 = `
 ╰━─━─☾︎🌊☽︎─━─━╯`
 const cmenu = `
 ╔╦══• •✠•❀•✠ • •══╦╗
-    🇯🇵💮 𝕿𝖍ٌ𝖊𝕮𝖍𝖔𝖚𝖙𝖊 💮🇯🇵 
+   🐞 𝕿𝖚𝖙𝖞  🐞
 ╚╩══• •✠•❀•✠ • •══╩╝
 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 Buenas tardes🌇 _@${sender.split('@')[0]}_
@@ -620,7 +620,6 @@ Buenas tardes🌇 _@${sender.split('@')[0]}_
 [💈] Total de Participantes: _${groupMembers.length}_
 
 ||- *_-INFO DEL BOT-_*
-[💈] Creador: @${Oowner.split('@')[0]}
 [💈] Hora: ${jm}
 [💈] Dispositivo: _${leo.user.phone.device_manufacturer}_
 [💈] Servidor: ${leo.browserDescription[0]}
@@ -630,7 +629,7 @@ Buenas tardes🌇 _@${sender.split('@')[0]}_
 [💈] Chat Totales: ${totalchat.length}`
 
 const extra = `
-๑۩۞۩๑ 𝐎𝐰𝐧𝐞𝐫 𝐨 𝐁𝐨𝐭..๑۩۞۩๑
+๑۩۞۩๑ 𝐁𝐨𝐭..๑۩۞۩๑
 
 ||- *_-Banear Usuario del Bot-_*
 
@@ -649,7 +648,7 @@ const entrete = `๑۩۞۩๑ 𝐉𝐮𝐞𝐠𝐨𝐬/𝐄𝐧𝐭𝐫𝐞𝐭�
 
 [💈] ${prefix}top5 (Texto)
 Ejemplo:
-${prefix}top5 Feos
+${prefix}top5 altos
 
 ||- *_-El bot te cuenta un chiste-_*
 [💈] ${prefix}chiste
@@ -665,11 +664,8 @@ const nivel = `
 ` 
 const texto = `
 ⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊}
-      ༻▫️ 𝒯𝒽𝑒 𝒞𝒽𝑜𝓊𝓉𝑒 ▫️༺
+      ༻▫️ 𝕿𝖚𝖙𝖞 ▫️༺
 ⚊⚊⚊⚊⚊✬✥✬⚊⚊⚊⚊⚊
-• • • • • • • • •「◆」• • • • • • • • •
-_Si el bot presenta algun fallo, notificarlo a @${Oowner.split('@')[0]}_
-• • • • • • • • • • • • • • • • • • • • • 
 `
 
 const owener = `
@@ -804,21 +800,13 @@ const multimedia = `๑۩۞۩๑ 𝐌𝐮𝐥𝐭𝐢𝐦𝐞𝐝𝐢𝐚..๑۩
 
 
 const base = `
-INFO DE MI CREADOR
-
-*Youtube:*
-https://www.youtube.com/channel/UC-HPutaDGeTPjrCId0bXQgg?sub_confirmation=1
-
-*Instagram:*
-https://www.instagram.com/the_choute_/
-
-*Github:*
-https://github.com/Thechoute
+Aquí no hay nada...
 `
 
 const infobot =
 `INFO DEL BOT
-Creador: @${Oowner.split('@')[0]}
+Creador codigo: 𝕿𝖍𝖊𝖈𝖍𝖔𝖚𝖙𝖊
+Editor: 𝕿𝖚𝖙𝖞
 Prefijo: "${prefix}"
 Velocidad: ${process.uptime()} 
 Servidor: ${leo.browserDescription[0]}
@@ -838,28 +826,19 @@ Hora: ${hora}
 Fecha: ${week1}  ${calender1}
 `
 const infocreador = 
-`${timeFt} @${sender.split('@')[0]}
-
-Mi creador es @${Oowner.split('@')[0]}
-
-*Instagram:* ${instachoute}
-
-*Github:* ${gitchoute}
-
-*Youtube:* youtube.com/c/thechout`
+`No encontré nada xd`
 
 const registro = `
 *PORFAVOR ESCRIBE BIEN EL FORMATO DE REGISTRO:* 
 ${prefix}reg *Nombre|Edad* 
-Con el *|* que los divide.
+Con el *|* que los divide xD
 `
 const menue = `▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 *- ${timeFt} @${sender.split("@")[0]}.* 
-Si tienes dudas o necesitas alguna ayuda siempre le puedes hablar a mi creador @${Oowner.split("@")[0]}.
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 De preferencia solo hablare si realmente necesitas algo.
 
-♻️ *DATOS DEL GRUPO*
+🐱 *DATOS DEL GRUPO*
 [💈] Nombre: _${groupMetadata.subject}_
 [💈] Administradores: _${groupAdmins.length}_
 [💈] Miembros: _${groupMembers.length - groupAdmins.length }_
@@ -873,7 +852,7 @@ const allmenu =
 `
 ╔─━━━░★░━━━━╗
             *MENU OFICIAL*
-         
+	    𝕿𝖚𝖙𝖞        
 ╚─━━━░★░━━━─╝
 
 ¤ = ~ ~ ◉ ~~ = ¤.•♫•♬•♬•♫•.
@@ -931,7 +910,7 @@ ${owener}
         ownerB: 'Este comandos solo puede ser utilizado desde el numero del bot',
         admin: '𝐄𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐞𝐬 𝐬𝐨𝐥𝐨 𝐩𝐚𝐫𝐚 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫𝐞𝐬 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨.',
         Badmin: '𝐁𝐨𝐭𝐜𝐢𝐭𝐨 𝐝𝐞𝐛𝐞 𝐬𝐞𝐫 𝐚𝐝𝐦𝐢𝐧 𝐩𝐚𝐫𝐚 𝐩𝐨𝐝𝐞𝐫 𝐮𝐬𝐚𝐫 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨',
-        usrReg: `No estas registrado para registrarte utiliza\n${prefix}reg\n\n*Ejemplo:*\n\n${prefix}reg Thechoute|14`
+        usrReg: `No estas registrado, para registrarte utiliza\n${prefix}reg\n\n*Ejemplo:*\n\n${prefix}reg Tuty|20`
       }
     }
 
@@ -1005,10 +984,6 @@ if (test.includes(`grupo`)){
         "rowId": `miperfil`
         },
         {
-        "title": 'Recomendaciones',
-        "rowId": `recomendaciones`
-        },
-        {
         "title": 'Menu Completo',
         "rowId": `allmenu`
         },
@@ -1016,14 +991,6 @@ if (test.includes(`grupo`)){
         },
         { "title": `Seleccion tu menu`,
         "rows": [
-        {
-        "title": 'Menu de Grupos',
-        "rowId": `admin`
-        },
-        {
-        "title": 'Owner / Dueño Del Bot',
-        "rowId": `menuowner`
-        },
         {
         "title": 'Descargas/Multimedia',
         "rowId": `menumedia`
@@ -1038,40 +1005,7 @@ if (test.includes(`grupo`)){
         },   
         ]
         },        
-        {
-        "title": `🔖 Créditos / Creador 🔮 `,
-        "rows": [
-        {
-        "title": ' 🔮 Creador',
-        "rowId": `creador`
-        },
-        {
-        "title": 'Donacion / Agradecimiento',
-        "rowId": `agradecimiento`
-        },
-        ]    
-        },
-        {
-        "title": `Link Grupos de WhatsApp Recomendados`,
-        "rows": [
-        {
-        "title": 'Grupos de Amistad & Mas',
-        "rowId": `linkgpw`
-        }
-        ]    
-        },
-        {
-        "title": `Youtube`,
-        "rows": [
-        {
-        "title": 'Como Instalar Este Bot',
-        "rowId": `install`
-        },
-        ]    
-        }
-        ],
-        }
-        },
+
           {quoted: janza, contextInfo: { mentionedJid: [sender,Oowner]}})
         leo.relayWAMessage(lista)  
         addFilter(from)
@@ -1156,7 +1090,6 @@ if (choute.message.listResponseMessage){
   reply('Cargando Menu Completo, No Hagas Spam')            
   txtt =
   `${texto}\n${allmenu}`
-    buttons1 = [{buttonId:`grupo`,buttonText:{displayText: 'Grupo de WhatsApp'},type:1},]
     imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/bot-baby.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
     buttonsMessage = {
     contentText: `${txtt}`,
@@ -1369,33 +1302,33 @@ if (body.includes("http://")){
 
 if (!isGroup) return
 if (!isAntiLink) return
-if (isAdmin) return('🧐')
+if (isAdmin) return(':0')
 leo.updatePresence(from, Presence.composing)
 var kic = `@${sender.split("@")[0]}@s.whatsapp.net`
-reply(`Los link no son permitidos rata ${sender.split("@")[0]}`, mentionedJid [sender])
+reply(`Los link no son permitidos we ${sender.split("@")[0]}`, mentionedJid [sender])
 setTimeout( () => {
 leo.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 }, 1000)
 setTimeout( () => {
 leo.updatePresence(from, Presence.composing)
-reply("adios")
+reply("chau")
 }, 0)
 }
 if (body.includes(".com")){
 if (!isGroup) return
 if (!isAntiLink) return
-if (isAdmin) return('🧐')
+if (isAdmin) return(':0')
 if (!botAdmin & isAntiLink & isGroup) 
 
 leo.updatePresence(from, Presence.composing)
 var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-reply(`Los links no son permitidos rata @${sender.split("@")[0]}`)
+reply(`Los links no son permitidos we @${sender.split("@")[0]}`)
 setTimeout( () => {
 leo.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 }, 1000)
 setTimeout( () => {
 leo.updatePresence(from, Presence.composing)
-reply("adios")
+reply("bye")
 }, 0)
 }
 
@@ -1405,7 +1338,7 @@ if (body.includes(`@${botNumber}`)){
 
 switch (command) {
 case 'reg':   
-            if (isRegister) return reply('*Tu Ya Estas Registrado, o No Lo Recuerdas?*')
+            if (isRegister) return reply('*Ya te registrate*')
             if (!q.includes('|')) return  reply(`${registro}`)
             const nombre = q.substring(0, q.indexOf('|') - 0)
             const edad = q.substring(q.lastIndexOf('|') + 1)
