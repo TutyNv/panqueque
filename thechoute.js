@@ -1443,8 +1443,10 @@ case 'menu':
                 if (isBan) return reply (baby.only.benned)	
                 reply('Cargando Menu, Porfavor no hacer spam de mensaje')
                txtt =`${cmenu}`              
-                sendButLocation(from, `${txtt}`, `Creador @${Oowner.split("@")[0]}`, fs.readFileSync("./media/imagen/absu.jpg"),
+                sendButLocation(from, `${txtt}`, `panqueque`, fs.readFileSync("./media/imagen/absu.jpg"),
                 buttons =[ {buttonId:`ml`,buttonText:{displayText: 'Lista de Menus'},type:1},
+	        {buttonId:`sex`,buttonText:{displayText:'Como tener un bot'},type:1},
+                {buttonId:`grupo`,buttonText:{displayText:'Grupos prueba bot'},type:1}],
                 {contextInfo: { mentionedJid: [sender,Oowner]}})
                 men = leo.prepareMessageFromContent(from, { buttonsMessages })
                 leo.relayWAMessage(men)
