@@ -1004,8 +1004,8 @@ if (test.includes(`grupo`)){
         "rowId": `Logos`
         },   
         ]
-	},
-        ]
+	}
+        ],
 	}
 	},
 
