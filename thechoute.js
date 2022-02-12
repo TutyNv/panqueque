@@ -85,8 +85,8 @@ const {janza, janz, menuall, qmiembros, brillo, choute, cnal} = require ('./lib/
 
 const {bechoso} = require ('./lib/exportaciones/bechoso')
 const { vor } = require ('./lib/baby/vor')
-const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z } = require ('./lib/baby/verdad')
-const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, } = require ('./lib/baby/retos')
+const { A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA, AB, AC, AD, AE, AF, AG, AH, AI, AJ, } = require ('./lib/baby/verdad')
+const {R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27,R28, R29, R30, R31, R32, R33, R34, R35, R36,  } = require ('./lib/baby/retos')
 //ᴘᴀʀᴀ ᴇʟ ᴍᴇɴᴜ ᴅᴇ ʙᴏᴛᴏɴᴇꜱ
 const { linkgp } = require ('./lib/exportaciones/linkgp')
 //Connet
@@ -139,7 +139,7 @@ try {pushnem = choute.key.fromMe ? leo.user.name : conts.notify || conts.vname |
     try {
     ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)} 
     catch {
-    ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}  
+    ppimg = 'https://data.whicdn.com/images/336205746/original.jpg'}  
     
      teks = 
 `Hola, @${num.split('@')[0]}
@@ -163,7 +163,7 @@ Esperemos la pases bien y te guste el grupo.`
   try {
   ppimg = await leo.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)} 
   catch {
-  ppimg = 'https://i.ibb.co/gDJ29Jt/Baby-Foto-Perfil.jpg'}  
+  ppimg = 'https://i.pinimg.com/originals/9f/70/ff/9f70ffc168471630da4f6c3cd329249e.jpg'}  
     teks = `
     @${num.split('@')[0]} Adios no se te extrañara, no comas nada del suelo que estan envenenando a los perros :)`
     let fotoP = await getBuffer(ppimg)
@@ -602,7 +602,7 @@ const texto11 = `
 ╰━─━─☾︎🌊☽︎─━─━╯`
 const cmenu = `
 ╔╦══• •✠•❀•✠ • •══╦╗
-       🐞 𝕿𝖚𝖙𝖞  🐞
+      🐞 𝕿𝖚𝖙𝖞  🐞
 ╚╩══• •✠•❀•✠ • •══╩╝
 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 Buenas tardes🌇 _@${sender.split('@')[0]}_
@@ -1223,7 +1223,7 @@ test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`verdad`)){
   if (isBan) return reply (baby.only.benned)	
   if (!isRegister) return reply(baby.only.usrReg)
-  respuesta = [`${A}`,`${B}`,`${C}`, `${D}`,`${E}`,`${F}`,`${G}`,`${H}`,`${I}`,`${J}`,`${K}`,`${L}`,`${M}`,`${N}`,`${Ñ}`,`${O}`,`${P}`,`${Q}`,`${R}`,`${S}`,`${T}`,`${U}`,`${V}`,`${W}`,`${X}`,`${Y}`,`${Z}`]
+  respuesta = [`${A}`,`${B}`,`${C}`, `${D}`,`${E}`,`${F}`,`${G}`,`${H}`,`${I}`,`${J}`,`${K}`,`${L}`,`${M}`,`${N}`,`${Ñ}`,`${O}`,`${P}`,`${Q}`,`${R}`,`${S}`,`${T}`,`${U}`,`${V}`,`${W}`,`${X}`,`${Y}`,`${Z}`,`${AA}`,`${AB}`,`${AC}`,`${AD}`,`${AE}`,`${AF}`,`${AG}`,`${AH}`,`${AI}`,`${AJ}`]
   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
   reply(answer)  
   addFilter(from)
@@ -1234,7 +1234,7 @@ test = choute.message.buttonsResponseMessage.selectedButtonId
 if (test.includes(`reto`)){
   if (isBan) return reply (baby.only.benned)	
   if (!isRegister) return reply(baby.only.usrReg)
-  respuesta = [ `${R1}`, `${R2}`, `${R3}`, `${R4}`, `${R5}`, `${R6}`, `${R7}`, `${R8}`, `${R9}`, `${R10}`, `${R11}`, `${R12}`, `${R13}`, `${R14}`, `${R15}`, `${R16}`, `${R17}`, `${R18}`, `${R19}`, `${R20}`, `${R21}`, `${R22}`, `${R23}`, `${R24}`, `${R25}`]
+  respuesta = [ `${R1}`, `${R2}`, `${R3}`, `${R4}`, `${R5}`, `${R6}`, `${R7}`, `${R8}`, `${R9}`, `${R10}`, `${R11}`, `${R12}`, `${R13}`, `${R14}`, `${R15}`, `${R16}`, `${R17}`, `${R18}`, `${R19}`, `${R20}`, `${R21}`, `${R22}`, `${R23}`, `${R24}`, `${R25}`, `${R26}`, `${R27}`, `${R28}`, `${R29}`, `${R30}`, `${R31}`, `${R32}`, `${R33}`, `${R34}`, `${R35}`, `${R36}`]
   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
   reply(answer)
   addFilter(from)  
@@ -1470,7 +1470,7 @@ case 'añadir':
                               leo.groupAdd(from, [num])
                               } catch (e) {
                               console.log('Error :', e)
-                              return leo.sendMessage(from, 'Modo privado dice:v', MessageType.text)
+                              return leo.sendMessage(from, 'Modo privado dice :v', MessageType.text)
                               }
                               break
 
@@ -1884,7 +1884,7 @@ case 'enlace':
 case 'chiste':
             if (isBan) return reply (baby.only.benned)	
             if (!isRegister) return reply(baby.only.usrReg)
-            respuesta = [`¿Cuál es el colmo de un ciego?\n Enamorarse a primera vista.`, `*¿Qué le dijo un zapato a otro?* \n - Qué vida más arrastrada llevas. \n ¡MIRA LOS ZAPATOS QUE EXISTEN PARA ANDAR POR EL TECHO!`, `¿Qué le dijo un cable a otro cable? \n Somos los intocables.`, `¿Por qué llora un libro de matemáticas? \n ¡Porque tiene muchos problemas!`, `¿Qué está al final de todo? ¡La letra o!`, `¿Por qué el profe de música tiene una escalera? \n ¡Para poder llegar a las notas más altas!`, `¿Qué le dice una iguana a su hermana gemela? \n Somos iguanitas`, `*¿Cuál es el colmo del electricista?* \n ¡Que su mujer se llame Luz!`, `¿Cómo se dice pañuelo en japonés? \n Sacamoko`, `¿Cuál es el pez que huele mucho? \n ¡Peztoso!`, `¿Sabes cómo se queda un mago después de comer? \n Magordito`, `¿Cuál es el último animal que subió al arca de Noé? \n El del-fin`,`¿Cómo se dice disparo en árabe? \n Ahí-va-la-bala`, `Un pez le pregunta a otro pez: ¿qué hace tu mamá? Este le contesta: Nada, ¿y la tuya qué hace? \n Nada también.`, ` Camarero, ese filete tiene muchos nervios. \n Pues normal, es la primera vez que se lo comen.`, `El profesor le pregunta a Jaimito: Jaimito, ¿qué fórmula química es H2O+CO+CO? \n ¡Fácil, profesor! Es agua de coco`, `Una liebre le dice a una tortuga en una fiesta: Tortuga, se acabó el vino, toma este dinero y ve a comprar. La tortuga se va y vuelve al cabo de un año. Entonces le dice a la liebre: \n ¿Cómo lo quieres, blanco o tinto?` ]
+            respuesta = [`¿A qué te dedicas? , le preguntan a un hombre en una agencia de empleos. El hombre responde: a matar dragones. Y de forma exclamativa le dicen: ¡pero los dragones no existen! El hombre responde de manera interrogativa: ¿Ustedes han visto alguno? El que le está entrevistando de inmediato responde: no señor, claro que no. Y el hombre, orgulloso, replica: pues eso, porque yo los maté a todos.`, `Está un niño haciendo deberes y le pregunta a su papá: ¡Papá!, ¿cómo se escribe la palabra campana? Su padre responde: Pues se escribe igual que suena hijo. Gracias, papá, le responde el niño antes de escribir tolón, tolón.`, `¿Qué le dijo un cable a otro cable? \n Somos los intocables.`, `¿Por qué llora un libro de matemáticas? \n ¡Porque tiene muchos problemas!`, `¿Qué está al final de todo? ¡La letra o!`, `¿Por qué el profe de música tiene una escalera? \n ¡Para poder llegar a las notas más altas!`, `En una discoteca, se acerca un hombre a una mesa y le dice a una de las chicas: ¿Bailamos? La muchacha le dice al caballero: ¿Y quién sacará a mi amiga? No te preocupes, le dice el hombre, ¡seguridad, saquen a esa mujer de aquí!`, `*¿Cuál es el colmo del electricista?* \n ¡Que su mujer se llame Luz!`, `¿Cómo se dice pañuelo en japonés? \n Sacamoko`, `Carlitos entra a un videoclub y le pregunta al dueño: Señor, ¿puede alquilarme "Batman Forever"? A lo que el hombre le contesta: No, "forever" no puedo, tiene que devolverla "tomorrow".`, `¿Cuál es la fruta más divertida?.... ¡La naranjajajaja!`, `¿Cuál es el último animal que subió al arca de Noé? \n El del-fin`,`¿Cómo se dice disparo en árabe? \n Ahí-va-la-bala`, `Un pez le pregunta a otro pez: ¿qué hace tu mamá? Este le contesta: Nada, ¿y la tuya qué hace? \n Nada también.`, ` Camarero, ese filete tiene muchos nervios. \n Pues normal, es la primera vez que se lo comen.`, `El profesor le pregunta a Jaimito: Jaimito, ¿qué fórmula química es H2O+CO+CO? \n ¡Fácil, profesor! Es agua de coco`, `Una liebre le dice a una tortuga en una fiesta: Tortuga, se acabó el vino, toma este dinero y ve a comprar. La tortuga se va y vuelve al cabo de un año. Entonces le dice a la liebre: \n ¿Cómo lo quieres, blanco o tinto?` ]
             answer = respuesta[Math.floor(Math.random() * respuesta.length)]
             reply(answer)
             addFilter(from)
@@ -1985,7 +1985,7 @@ case 'top5':
               if (!isRegister) return reply(baby.only.usrReg)
               if (isBan) return reply (baby.only.benned)	
   addFilter(from)
-          if (!isGroup) return reply('Top5 en un chat? Te gusta la pija cierto. Este comando es solo para grupos.')
+          if (!isGroup) return reply('Top5 en un chat? Este comando es solo para grupos.')
           member = []
           top5 = args.join(' ')
           const p1 = groupMembers
@@ -2011,9 +2011,9 @@ break
 case 'pregunta':
                   if (!isRegister) return reply(baby.only.usrReg)
                   if (isBan) return reply (baby.only.benned)	
-                  respuesta = ['Si', 'No', 'Tal vez', 'Puede ser', 'Hay una probabilidad del 99.99999999991.01%', 'Puede que no', 'Yo que se', 'mmm.... Dejame lo pienso un poco' ]
+                  respuesta = ['Si', 'No', 'Tal vez', 'Puede ser', 'Hay una probabilidad del 99.99999999991.01%', 'Puede que no', 'No sé :v', 'mmm.... Dejame lo pienso un poco', 'Yo no te lo quería decir pero... si', 'Eso es un se-cre-to', 'Ajam.. claaaro..', 'La respuesta está en tu corazón', 'No, no y no', 'Mañana sin falta te respondo', 'Yes! Yes! Yes!', 'Ya sabes la respuesta.', 'Mi bola de cristal dijo... SIIII', 'SImón', 'NOruega', 'De día si y de noche no']
                   answer = respuesta[Math.floor(Math.random() * respuesta.length)]
-                  if (!q) return reply('Y la pregunta?')
+                  if (!q) return reply('Preguntaste algo? yo no veo la pregunta :T')
                   reply(answer)
                   addFilter(from)
                   break
@@ -2838,7 +2838,7 @@ break
 case 'apagar':
 case 'off':
             if (!isOwner) return reply(baby.only.ownerB)
-            reply('Deja me apago al toque mi king')
+            reply('Entonces me apago^^')
             setTimeout( () => {
             leo.close() }, 3000)
             break
@@ -2868,11 +2868,11 @@ case 'ban':
                 if (mentionUser.length !== 0){
                 for (let i = 0; i < mentionUser.length; i++){
                 addBanned(mentionUser[0], args[1], ban)}
-                (`@${mentionUser[0].split('@')[0]} Estas baneado no podes usar el bot :D1`, mentionUser, true)
+                (`@${mentionUser[0].split('@')[0]} Estas baneado no podes usar el bot :D`, mentionUser, true)
                        
                 isbans =`@${mentionUser[0].split('@')[0]} Haz sido *_Baneado_* ya no puedes usar el bot`, mentionUser, true
-                        buttons1 = [{buttonId:`owner`,buttonText:{displayText: 'Owner'},type:1},]
-                imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/ban.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
+                buttons1 = [{buttonId:`owner`,buttonText:{displayText: 'Owner'},type:1},]
+                imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/fake.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
                 buttonsMessage = {
                 contentText: `${isbans}`,
                 footerText: '© panquesito', imageMessage: imageMsg,
@@ -2991,7 +2991,7 @@ break
 
 case 'bue':                
 if (!isOwner)
-if (!isWelkom) return reply('faita la de bua')
+if (!isWelkom) return reply('falta la de bua')
 if (args.length < 1) return reply('Thuy')          
 if (args[0] === 'on') {                                    
 if (isAntiFake) return reply('*Ya esta activo*')          
@@ -3018,7 +3018,7 @@ reply(baby.ferr)
 break
 
 case 'anuncio':
-if (!isOwner) return reply('Solo *TheChoute* puede usar este comando')
+if (!isOwner) return reply('Solo Tuty puede usar este comando')
 if (args.length < 1) return reply('Y el anuncio?')
 anu = await leo.chats.all()
 if (isMedia && !choute.message.videoMessage || isQuotedImage) {
@@ -3041,7 +3041,7 @@ sendMess(_.jid,
 
 ╭━─━─━─≪☁️≫─━─━─━╮
       ✧☆∵✧☆
-      «${yo}☁︎»    
+      «$𝕿𝖚𝖙𝖞☁︎»    
       ✧☆∵✧☆
 ╰━─━─━─☾︎🌊☽︎─━─━─━╯`)}
 }
