@@ -2183,7 +2183,7 @@ case 'meme':
                 leo.updatePresence(from, Presence.composing)
                 if (!isRegister) return reply(baby.only.usrReg)            
                 try {
-                beh = await getJson(`https://meme-api.herokuapp.com/gimme/memesmexico`)
+                beh = await getJson(`https://meme-api.herokuapp.com/gimme`)
                 pint = await getBuffer(`${beh.url}`)
                 reply(baby.wait)
                 leo.sendMessage(from, pint, image, {
