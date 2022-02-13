@@ -1482,9 +1482,9 @@ case 'fuera':
             if (!isGroup) return reply(baby.only.group)
             if (!isAdmin) return reply(baby.only.admin)
             if (!botAdmin) return reply(baby.only.Badmin)
-            if (!mentionUser.length == 1) return reply('Eliqueta un mensaje de aquien debo eliminar o mencionalo')
+            if (!mentionUser.length == 1) return reply('Eliqueta un mensaje de a quién debo eliminar o mencionalo')
             leo.groupRemove(from, mentionUser) 
-            reply ('Al toque elimino a la rata')
+            reply ('Usuario que incumplió las reglas, eliminado :)')
             break
 
 case 'antifake':        
@@ -1919,7 +1919,7 @@ _Acontinuacion te muestro, mi creador, de preferencia solo hablare si necesitas 
 case 'vor':
             if (!isRegister) return reply(baby.only.usrReg)
             if (isBan) return reply (baby.only.benned)	
-              txtt =`*𝗩𝗘𝗥𝗗𝗔𝗗 𝗢 𝗥𝗘𝗧𝗢*\n`
+              txtt =`*𝗩𝗘𝗥𝗗𝗔𝗗 𝗢 𝗥𝗘𝗧𝗢*\n Enviar pruebas en caso de ser reto(salvo se especifique que no es necesario)`
             buttons1 = [{buttonId:`verdad`,buttonText:{displayText: 'Verdad'},type:1},
                         {buttonId:`reto`,buttonText:{displayText: 'Reto'},type:1}]
             imageMsg = (await leo.prepareMessageMedia(fs.readFileSync(`./media/imagen/game.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/imagen/fake.jpg`)})).imageMessage
