@@ -650,8 +650,8 @@ const entrete = `๑۩۞۩๑ 𝐉𝐮𝐞𝐠𝐨𝐬/𝐄𝐧𝐭𝐫𝐞𝐭�
 Ejemplo:
 ${prefix}top5 altos
 
-||- *_-El bot te cuenta un chiste-_*
-[💈] ${prefix}chiste
+||- *_-El bot te cuenta un chiste o frase random-_*
+[💈] ${prefix}divagar
 
 `
 
@@ -1881,10 +1881,10 @@ case 'enlace':
             await wa.sendFakeStatus(from, link, "El lik de este grupo es")
             break
 
-case 'chiste':
+case 'divagar':
             if (isBan) return reply (baby.only.benned)	
             if (!isRegister) return reply(baby.only.usrReg)
-            respuesta = [`¿A qué te dedicas? , le preguntan a un hombre en una agencia de empleos. El hombre responde: a matar dragones. Y de forma exclamativa le dicen: ¡pero los dragones no existen! El hombre responde de manera interrogativa: ¿Ustedes han visto alguno? El que le está entrevistando de inmediato responde: no señor, claro que no. Y el hombre, orgulloso, replica: pues eso, porque yo los maté a todos.`, `Está un niño haciendo deberes y le pregunta a su papá: ¡Papá!, ¿cómo se escribe la palabra campana? Su padre responde: Pues se escribe igual que suena hijo. Gracias, papá, le responde el niño antes de escribir tolón, tolón.`, `¿Qué le dijo un cable a otro cable? \n Somos los intocables.`, `¿Por qué llora un libro de matemáticas? \n ¡Porque tiene muchos problemas!`, `¿Qué está al final de todo? ¡La letra o!`, `¿Por qué el profe de música tiene una escalera? \n ¡Para poder llegar a las notas más altas!`, `En una discoteca, se acerca un hombre a una mesa y le dice a una de las chicas: ¿Bailamos? La muchacha le dice al caballero: ¿Y quién sacará a mi amiga? No te preocupes, le dice el hombre, ¡seguridad, saquen a esa mujer de aquí!`, `*¿Cuál es el colmo del electricista?* \n ¡Que su mujer se llame Luz!`, `¿Cómo se dice pañuelo en japonés? \n Sacamoko`, `Carlitos entra a un videoclub y le pregunta al dueño: Señor, ¿puede alquilarme "Batman Forever"? A lo que el hombre le contesta: No, "forever" no puedo, tiene que devolverla "tomorrow".`, `¿Cuál es la fruta más divertida?.... ¡La naranjajajaja!`, `¿Cuál es el último animal que subió al arca de Noé? \n El del-fin`,`¿Cómo se dice disparo en árabe? \n Ahí-va-la-bala`, `Un pez le pregunta a otro pez: ¿qué hace tu mamá? Este le contesta: Nada, ¿y la tuya qué hace? \n Nada también.`, ` Camarero, ese filete tiene muchos nervios. \n Pues normal, es la primera vez que se lo comen.`, `El profesor le pregunta a Jaimito: Jaimito, ¿qué fórmula química es H2O+CO+CO? \n ¡Fácil, profesor! Es agua de coco`, `Una liebre le dice a una tortuga en una fiesta: Tortuga, se acabó el vino, toma este dinero y ve a comprar. La tortuga se va y vuelve al cabo de un año. Entonces le dice a la liebre: \n ¿Cómo lo quieres, blanco o tinto?` ]
+            respuesta = [`Un ladrón dice... ESTO ES UN ASALTO! EL DINERO O LA VIDA!, a lo que la víctima responde... amigo soy casado cuál dinero? cuál vida? `, `Me enteré que no te gustan mis chistes, así que tú cuenta uno :)`, `Si buscas algo: Google, si buscas a alguien: Facebook, si no encuentras algo: MAMÁ`, `No te preocupes, dejar de fumar es fácil, yo lo he dejado como cien veces Att: Esteban`, `Cuando sube el pan, bajan los gordos.. y me identifico`, `Querido Santa, envíame un hermanito. Santa responde: Ok, envíame a tu Mamá... \n Te gusto ese? pinche persona amargada >:(`, `Se bueno con tus hijos, ellos elegirán tu residencia.`, `Si algún día te sientes pequeño, inútil ultrajado y deprimido, recuerda que un día fuiste el espermatozoide más rápido y victorioso de tu grupo.`, `Una prostituta es una señora que al desvestirse, queda en ropa de trabajo.`, `Ahora lo de borrar a alguien de tu vida es todo un tema, lo tienes que borrar de WhatsApp, Tuenti, Facebook, Twitter, Instagram... es mejor matarlo..`, `El 87% de las personas jóvenes sufren de dolores de espalda. El otro 13% no tiene computadora.`, `El dinero no compra la felicidad, pero me paga el internet y eso es casi lo mismo.`,`Yo también canto hermoso, hasta que me quito los audífonos.`, `Te miré durante varios minutos entrecerrando los ojos y creíste que era conquista, pero no amigo, era un problema de vista.`, `Cualquiera se puede equivocar, inclusive yo..`, `Solo los genios somos modestos.`, `Maldita vagancia sal de este cuerpo estudioso y trabajador.`, `Tengo que ir al oculista, pero nunca veo el momento.`, `El diabético no puede ir de luna de miel.`, `¿Por qué apretamos más fuerte los botones del mando a distancia cuando tiene pocas pilas?`, `¿Por qué cuando nos llaman al móvil sentimos la necesidad de ponernos a andar de un lado a otro?`, `¿Por qué nunca vemos esta noticia en un periódico: "Adivino gana la lotería"?`, `Si homicidio es matar a un hombre, suicidio... ¿es matar a un suizo?`]
             answer = respuesta[Math.floor(Math.random() * respuesta.length)]
             reply(answer)
             addFilter(from)
@@ -2183,7 +2183,7 @@ case 'meme':
                 leo.updatePresence(from, Presence.composing)
                 if (!isRegister) return reply(baby.only.usrReg)            
                 try {
-                beh = await getJson(`https://meme-api.herokuapp.com/gimme`)
+                beh = await getJson(`https://meme-api.herokuapp.com/gimme/memeslatinos`)
                 pint = await getBuffer(`${beh.url}`)
                 reply(baby.wait)
                 leo.sendMessage(from, pint, image, {
