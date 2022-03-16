@@ -1478,6 +1478,7 @@ case 'añadir':
 case 'kick':
 case 'eliminar':
 case 'fuera':
+case 'chau':
             if (!isRegister) return reply(baby.only.usrReg)
             if (isBan) return reply (baby.only.benned)	
             if (!isGroup) return reply(baby.only.group)
@@ -2818,7 +2819,7 @@ case 'autokick':
                 if (!isGroup) return reply(baby.only.group)
                 if (!isAdmin) return reply(baby.only.admin)
                 if (!botAdmin) return reply(baby.only.Badmin)
-                if (botAdmin) reply(`Que? Eso no existe no seas homosexual`)                                                                     
+                if (botAdmin) reply(`Que? Eso no existe we`)                                                                     
                 setTimeout( () => { 
                 leo.groupRemove(from, 'Ni modo uno menos', text, [sender]) }, 6000)                    
                 break
