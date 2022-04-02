@@ -602,31 +602,31 @@ const texto11 = `
 ╰━─━─☾︎🌊☽︎─━─━╯`
 const cmenu = `
 ╔╦══• •✠•❀•✠ • •══╦╗
-      🐞 𝕿𝖚𝖙𝖞  🐞
+        🐞 𝕿𝖚𝖙𝖞  🐞
 ╚╩══• •✠•❀•✠ • •══╩╝
 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 Buenas tardes🌇 _@${sender.split('@')[0]}_
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 
-||- *_-DATOS DEL USUARIO-_*
-[💈] Usuario: _@${sender.split('@')[0]}_
-[💈] XP: _${getLevelingXp(sender)}_
-[💈] Nivel: _${getLevel1}_
+|🧁|- *_-DATOS DEL USUARIO-_*
+[🍓] Usuario: _@${sender.split('@')[0]}_
+[🍓] XP: _${getLevelingXp(sender)}_
+[🍓] Nivel: _${getLevel1}_
 
 ||- *_-INFO DEL GRUPO-_*
-[💈] Nombre: _${groupMetadata.subject}_
-[💈] Administradores: _${groupAdmins.length}_
-[💈] Miembros: _${groupMembers.length - groupAdmins.length }_
-[💈] Total de Participantes: _${groupMembers.length}_
+[🍓] Nombre: _${groupMetadata.subject}_
+[🍓] Administradores: _${groupAdmins.length}_
+[🍓] Miembros: _${groupMembers.length - groupAdmins.length }_
+[🍓] Total de Participantes: _${groupMembers.length}_
 
-||- *_-INFO DEL BOT-_*
-[💈] Hora: ${jm}
-[💈] Dispositivo: _${leo.user.phone.device_manufacturer}_
-[💈] Servidor: ${leo.browserDescription[0]}
-[💈] Version de WhatsApp: ${leo.browserDescription[2]}
-[💈] Navedador: ${leo.browserDescription[1]}
-[💈] Velocidad: ${process.uptime()} 
-[💈] Chat Totales: ${totalchat.length}`
+|🥞|- *_-INFO DEL BOT PANQUEQUE-_*
+[🍓] Hora: ${jm}
+[🍓] Dispositivo: _${leo.user.phone.device_manufacturer}_
+[🍓] Servidor: ${leo.browserDescription[0]}
+[🍓] Version de WhatsApp: ${leo.browserDescription[2]}
+[🍓] Navedador: ${leo.browserDescription[1]}
+[🍓] Velocidad: ${process.uptime()} 
+[🍓] Chat Totales: ${totalchat.length}`
 
 const extra = `
 ๑۩۞۩๑ 𝐁𝐨𝐭..๑۩۞۩๑
@@ -640,18 +640,24 @@ const extra = `
 `
 const entrete = `๑۩۞۩๑ 𝐉𝐮𝐞𝐠𝐨𝐬/𝐄𝐧𝐭𝐫𝐞𝐭𝐞𝐧𝐢𝐦𝐢𝐞𝐧𝐭𝐨.๑۩۞۩๑
 
-||- *_-Verdad O Reto-_*
+|🍭|- *_-Verdad O Reto-_*
 
-[💈] ${prefix}vor
+- ${prefix}vor
 
-||- *_-Top-_*
+|🖐|- *_-Top-_*
 
-[💈] ${prefix}top5 (Texto)
+- ${prefix}top5 (Texto)
 Ejemplo:
 ${prefix}top5 altos
 
-||- *_-El bot te cuenta un chiste o frase random-_*
-[💈] ${prefix}divagar
+|🪅|- *_-Panqueque te cuenta un chiste o frase random-_*
+- ${prefix}divagar
+
+|🔮|- *_-Panqueque responde a preguntas de si/no-_*
+- ${prefix}pregunta
+
+|🖼|- *_-Panqueque envía un meme-_*
+- ${prefix}meme
 
 `
 
