@@ -708,17 +708,17 @@ const grupos =  `||- *_-GRUPOS-_*
 
 ๑۩۞۩๑ 𝐀𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚...๑۩۞۩๑
 
-||- *_-Menciones-_*
+- *_-Menciones-_*
 
-[📧] ${prefix}hidetag
-[📧] ${prefix}miembros
-[📧] ${prefix}tangall
-[📧] ${prefix}alltang
-[📧] ${prefix}imagetang
-[📧] ${prefix}imagentang
-[📧] ${prefix}stickertang
+[💌] ${prefix}hidetag
+[💌] ${prefix}miembros
+[💌] ${prefix}tangall
+[💌] ${prefix}alltang
+[💌] ${prefix}imagetang
+[💌] ${prefix}imagentang
+[💌] ${prefix}stickertang
 
-||- *_-Eliminar / Agregar-_*
+- *_-Eliminar / Agregar-_*
 
 [👤] ${prefix}kick
 [👤] ${prefix}fuera
@@ -727,7 +727,7 @@ const grupos =  `||- *_-GRUPOS-_*
 [👤] ${prefix}unir 
 [👤] ${prefix}añadir
 
-||- *_-Bienvenida / Despedida-_*
+- *_-Bienvenida / Despedida-_*
 [💭] ${prefix}welcome on
 [💭] ${prefix}bv on 
 [💭] ${prefix}bienvenida on 
@@ -752,7 +752,7 @@ const grupos =  `||- *_-GRUPOS-_*
 [🛡️] ${prefix}autoadmin
 
 ||- *_-Quien ha visto el mensaje-_*
-[🛡️] ${prefix}sider (+mensaje del bot)
+[🛡️] ${prefix}sider (+mensaje de panqueque)
 
 ||- *_-Lista de Usuarios Enlinea-_*
 [🛡️] ${prefix}listonine
@@ -842,13 +842,13 @@ Con el *|* que los divide xD
 const menue = `▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
 *- ${timeFt} @${sender.split("@")[0]}.* 
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀
-De preferencia solo hablare si realmente necesitas algo.
+Sólo voy a hablar si necesitas algo^^
 
-🐱 *DATOS DEL GRUPO*
-[💈] Nombre: _${groupMetadata.subject}_
-[💈] Administradores: _${groupAdmins.length}_
-[💈] Miembros: _${groupMembers.length - groupAdmins.length }_
-[💈] Total de Participantes: _${groupMembers.length}_
+*DATOS DEL GRUPO*
+[🧁] Nombre: _${groupMetadata.subject}_
+[🧁] Administradores: _${groupAdmins.length}_
+[🧁] Miembros: _${groupMembers.length - groupAdmins.length }_
+[🧁] Total de Participantes: _${groupMembers.length}_
 `
 const install = 
 `averigualo tú mismo >:(`
@@ -856,10 +856,10 @@ const install =
 
 const allmenu = 
 `
-╔─━━━░★░━━━━╗
-            *MENU OFICIAL*
+╔─━━━░♡░━━━━╗
+            *MENU COMPLETO*
 	        𝕿𝖚𝖙𝖞        
-╚─━━━░★░━━━─╝
+╚─━━━░♡░━━━─╝
 
 ¤ = ~ ~ ◉ ~~ = ¤.•♫•♬•♬•♫•.
 ${timeFt} @${sender.split('@')[0]}
@@ -868,23 +868,23 @@ Hoy es ${week1} ${calender1}
 
 .•♫•♬•♬•♫•.¤ = ~ ~ ◉ ~~ = ¤
 
-||- *_-INFO DEL BOT-_*
+||- *_-INFO DE PANQUEQUE-_*
 
-[🔰] Prefijo: "${prefix}"
-[🔰] Velocidad: ${process.uptime()} 
-[🔰] Servidor: ${leo.browserDescription[0]}
-[🔰] Navegador: ${leo.browserDescription[1]}
-[🔰] Chat Privado: ${giid.length}
-[🔰] Chat de Grupos:  ${totalchat.length - giid.length}
-[🔰] Chat Totales: :${totalchat.length}
+[🥞] Prefijo: "${prefix}"
+[🥞] Velocidad: ${process.uptime()} 
+[🥞] Servidor: ${leo.browserDescription[0]}
+[🥞] Navegador: ${leo.browserDescription[1]}
+[🥞] Chat Privado: ${giid.length}
+[🥞] Chat de Grupos:  ${totalchat.length - giid.length}
+[🥞] Chat Totales: :${totalchat.length}
 
-[🔰] Dispositivo: ${device_manufacturer}s
-[🔰] Modelo: ${device_model}
-[🔰] Android: ${os_version} 
-[🔰] Bateria: 
-[🔰] Ram: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-[🔰] Hora: ${hora}
-[🔰] Fecha: ${week1}  ${calender1}
+[🥞] Dispositivo: ${device_manufacturer}s
+[🥞] Modelo: ${device_model}
+[🥞] Android: ${os_version} 
+[🥞] Bateria: 
+[🥞] Ram: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+[🥞] Hora: ${hora}
+[🥞] Fecha: ${week1}  ${calender1}
 
 
 ๑۩۞۩๑ 𝐋𝐢𝐬𝐭𝐚 𝐝𝐞 𝐌𝐞𝐧𝐮..๑۩۞۩๑
@@ -892,7 +892,6 @@ Hoy es ${week1} ${calender1}
 [📧] ${prefix}menugrupo
 [📧] ${prefix}menumedia
 [📧] ${prefix}menuowner
-[📧] ${prefix}menulogo
 [📧] ${prefix}entretenimiento
 
 
@@ -911,12 +910,12 @@ ${owener}
     },
     only: {
         group: 'Este comando solo puede ser usado en grupos.',
-        benned: 'Eres un usario *BANEADO* no puedes usar el bot',
+        benned: 'Eres un usario *BANEADO* no puedes usar a panqueque',
         ownerG: 'Este comando solo puede ser utilizado por el creador del grupo',
-        ownerB: 'Este comandos solo puede ser utilizado desde el numero del bot',
+        ownerB: 'Este comandos solo puede ser utilizado desde el numero de panqueque',
         admin: '𝐄𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐞𝐬 𝐬𝐨𝐥𝐨 𝐩𝐚𝐫𝐚 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫𝐞𝐬 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨.',
-        Badmin: '𝐁𝐨𝐭𝐜𝐢𝐭𝐨 𝐝𝐞𝐛𝐞 𝐬𝐞𝐫 𝐚𝐝𝐦𝐢𝐧 𝐩𝐚𝐫𝐚 𝐩𝐨𝐝𝐞𝐫 𝐮𝐬𝐚𝐫 𝐞𝐬𝐭𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨',
-        usrReg: `No estas registrado, para registrarte utiliza\n${prefix}reg\n\n*EJEMPLO:*\n\n${prefix}reg TuNombre|TuEdad`
+        Badmin: 'Panqueque debe ser admin.',
+        usrReg: `No estás registrado :v para registrarte con panqueque utiliza\n${prefix}reg\n\n*EJEMPLO:*\n\n${prefix}reg TuNombre|TuEdad`
       }
     }
 
@@ -936,7 +935,7 @@ if (choute.message.buttonsResponseMessage){
   if (test.includes(`sex`)){
     reply('*Cargando Proceso de Instalacion*\nPorfavor esperar.')
     leo.sendMessage(from, `${install}`, MessageType.text, {quoted: choute, caption: `El video sera subido pronto en el canal de `, contextInfo: {"forwardingScore": 508, "isForwarded": true, "externalAdReply": 
-    {"title": `Hola ${pushname} 👋🏻`, 
+    {"title": `Hola ${pushname}`, 
     "body": `MIRA EL VIDEO COMPLETO`, "mediaType": 2, 
     "thumbnail": fs.readFileSync(`media/imagen/youtube-min.jpg`), 
     mediaUrl: "https://youtu.be/Uv8U9VChJHo"}}}) 
@@ -1358,21 +1357,20 @@ case 'reg':
                 capt = `
 
 ┌────「 *REGISTRADO* 」─
-[💈] 𝐔𝐒𝐄𝐑: _${pushname}_
-[💈] 𝐍𝐎𝐌𝐁𝐑𝐄: _${nombre}_
-[💈] 𝐄𝐃𝐀𝐃: _${edad}_
-[💈] 𝐇𝐎𝐑𝐀: _${time}_
-[💈] DNI: _${serialUser}_
+[🍓] 𝐔𝐒𝐄𝐑: _${pushname}_
+[🍓] 𝐍𝐎𝐌𝐁𝐑𝐄: _${nombre}_
+[🍓] 𝐄𝐃𝐀𝐃: _${edad}_
+[🍓] 𝐇𝐎𝐑𝐀: _${time}_
+[🍓] DNI: _${serialUser}_
 └────「 𝕿𝖚𝖙𝖞 」
-Verificación completa usa *${prefix}menu* para ver el Menu`
-                let tampa = await getBuffer(ppimg)
-                leo.sendMessage(from, tampa, image, {quoted: choute, caption: capt})
+Verificación completa.`
+                
                 break 
 
 case 'menu':
                 if (!isRegister) return reply(baby.only.usrReg)
                 if (isBan) return reply (baby.only.benned)	
-                reply('Cargando Menu, Porfavor no hacer spam de mensaje')
+                reply('Cargando Menu, Porfavor no hacer spam de mensaje, panqueque puede apagarse')
                txtt =`${cmenu}`              
                 sendButLocation(from, `${txtt}`, `panqueque`, fs.readFileSync("./media/imagen/absu.jpg"),
                 buttons =[ {buttonId:`ml`,buttonText:{displayText: 'Lista de Menus'},type:1},
@@ -1479,6 +1477,8 @@ case 'añadir':
                               return leo.sendMessage(from, 'Modo privado dice :v', MessageType.text)
                               }
                               break
+case 'vaciar': if (!itsMe) return reply(baby.only.ownerB) reply('*Este chat a sido vaciado*') console.log('succes delete chat = ' + from) await sleep(4000) leo.modifyChat(from, ChatModification.delete) break
+case 'silencio': if (!itsMe) return reply(baby.only.ownerB) leo.modifyChat(from, ChatModification.mute, 24*60*60*1000) reply('*Este chat a sido silenciado*') console.log('succes mute chat = ' + from) break
 
 case 'kick':
 case 'eliminar':
@@ -2056,23 +2056,17 @@ case 'quemusicaes':
               break       
 
 case 'google':
-  if (!isRegister) return reply(baby.only.usrReg)
-  if (isBan) return reply (baby.only.benned)	
-              let buscar = args.join(' ')
-              if (!buscar) return reply('Que deseas buscar?')
-              let search = await LeoGg({ query: buscar })
-              let ggsm = ``
-              for (let i of search) {
-              ggsm += `
-*Titulo :* ${i.title}
-*Link :* ${i.link}
-*Contenido :* ${i.snippet}
-`
-              }
-              var babygg = ggsm.trim()
-              reply(`*🔍Busqueda realizada por* ${yo} \n\n${babygg}`)
-              addFilter(from)
-              break     
+		
+if (!isRegister) return leoply(baby.only.usrReg) 
+		if (isBan) return leoply (baby.only.benned)	 
+		let buscar = args.join(' ') 
+		if (!buscar) return reply('Que deseas buscar?') 
+		let search = await LeoGg({ query: buscar }) 
+		let ggsm = `` for (let i of search) 
+		{ ggsm += `*Titulo :* ${i.title}*Link :* ${i.link}*Contenido :* ${i.snippet}` } 
+		var babygg = ggsm.trim() reply(`*🔍Busqueda realizada por* ${yo} \n\n${babygg}`) 
+		addFilter(from) 
+		break 
 
 
 //𝙄𝙈𝘼𝙂𝙀𝙉
